@@ -11,6 +11,8 @@ namespace Ecom.core.Entities
         public string Name { get; set; }
         public string Description { get; set; }
         public decimal Price { get; set; }
+        public string ProductPicture { get; set; }
+
 
         // Navigation Property : 
         public int CategoryId { get; set; }

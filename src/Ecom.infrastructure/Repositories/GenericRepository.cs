@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Ecom.infrastructure.Repositories
 {
-    public class GenericRepository<T> : IGenericRepository<T> where T : class
+    public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity<int>
     {
         private readonly ApplicationDBContext _context;
 
@@ -26,7 +26,7 @@ namespace Ecom.infrastructure.Repositories
             await _context.SaveChangesAsync();
         }
 
-        public async Task DeleteAsync(T id)
+        public async Task DeleteAsync(int id)
         {
             var entity = await _context.Set<T>().FindAsync(id);
             _context.Set<T>().Remove(entity);
@@ -37,16 +37,16 @@ namespace Ecom.infrastructure.Repositories
         public IEnumerable<T> GetAll()
         => _context.Set<T>().AsNoTracking().ToList();
 
-        public async Task<T> GetByIdAsync(T id ,  params Expression<Func<T, object>>[] Includes)
+        public async Task<T> GetByIdAsync(int id ,  params Expression<Func<T, object>>[] Includes)
         {
-            IQueryable<T> query = _context.Set<T>();
+            IQueryable<T> query = _context.Set<T>().Where(x=>x.Id==id);
 
             foreach (var item in Includes)
             {
                 query = query.Include(item);
 
             }
-            return await ((DbSet<T>)query).FindAsync(id);
+            return await query.FirstOrDefaultAsync();
 
             
         }
@@ -69,10 +69,10 @@ namespace Ecom.infrastructure.Repositories
             return await query.ToListAsync();
         }
 
-        public async Task<T> GetAsync(T id)
+        public async Task<T> GetAsync(int id)
         => await _context.Set<T>().FindAsync(id);
 
-        public async Task UpdateAsync(T id, T entity)
+        public async Task UpdateAsync(int id, T entity)
         {
             var Exitingentity = await _context.Set<T>().FindAsync(id);
             

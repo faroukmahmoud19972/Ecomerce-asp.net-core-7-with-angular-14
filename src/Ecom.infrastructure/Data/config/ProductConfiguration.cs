@@ -26,6 +26,7 @@ namespace Ecom.infrastructure.Data.config
                 Description = "Description one ",
                 Price = 1000,
                 CategoryId = 1,
+                ProductPicture="https://"
             },
             new Product
             {
@@ -34,6 +35,7 @@ namespace Ecom.infrastructure.Data.config
                 Description = "Description two ",
                 Price = 2000,
                 CategoryId = 2,
+                ProductPicture = "https://"
             }, 
             new Product
             {
@@ -42,6 +44,7 @@ namespace Ecom.infrastructure.Data.config
                 Description = "Description three ",
                 Price = 3000,
                 CategoryId = 3,
+                ProductPicture = "https://"
             });
 
         }

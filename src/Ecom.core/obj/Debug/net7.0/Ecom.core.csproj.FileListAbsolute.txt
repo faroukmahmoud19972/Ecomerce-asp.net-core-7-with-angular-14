@@ -1,0 +1,12 @@
+D:\Demos\UdemyEcommerce\Ecom\src\Ecom.core\bin\Debug\net7.0\Ecom.core.deps.json
+D:\Demos\UdemyEcommerce\Ecom\src\Ecom.core\bin\Debug\net7.0\Ecom.core.dll
+D:\Demos\UdemyEcommerce\Ecom\src\Ecom.core\bin\Debug\net7.0\Ecom.core.pdb
+D:\Demos\UdemyEcommerce\Ecom\src\Ecom.core\obj\Debug\net7.0\Ecom.core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Demos\UdemyEcommerce\Ecom\src\Ecom.core\obj\Debug\net7.0\Ecom.core.AssemblyInfoInputs.cache
+D:\Demos\UdemyEcommerce\Ecom\src\Ecom.core\obj\Debug\net7.0\Ecom.core.AssemblyInfo.cs
+D:\Demos\UdemyEcommerce\Ecom\src\Ecom.core\obj\Debug\net7.0\Ecom.core.csproj.CoreCompileInputs.cache
+D:\Demos\UdemyEcommerce\Ecom\src\Ecom.core\obj\Debug\net7.0\Ecom.core.dll
+D:\Demos\UdemyEcommerce\Ecom\src\Ecom.core\obj\Debug\net7.0\refint\Ecom.core.dll
+D:\Demos\UdemyEcommerce\Ecom\src\Ecom.core\obj\Debug\net7.0\Ecom.core.pdb
+D:\Demos\UdemyEcommerce\Ecom\src\Ecom.core\obj\Debug\net7.0\ref\Ecom.core.dll
+D:\Demos\UdemyEcommerce\Ecom\src\Ecom.core\obj\Debug\net7.0\Ecom.core.sourcelink.json

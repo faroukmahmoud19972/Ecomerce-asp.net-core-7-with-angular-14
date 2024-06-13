@@ -1,4 +1,5 @@
 using Ecom.infrastructure;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +11,10 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.InfrastructureConfiguration(builder.Configuration);
+
+//configure automapper : 
+
+builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
 var app = builder.Build();
 

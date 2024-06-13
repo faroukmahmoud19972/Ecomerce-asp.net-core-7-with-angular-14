@@ -14,6 +14,10 @@ namespace Ecom.infrastructure.Repositories
         public ProductRepository(ApplicationDBContext context):base(context) 
         { 
         }
-     
+
+        public Task<bool> AddAsync()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

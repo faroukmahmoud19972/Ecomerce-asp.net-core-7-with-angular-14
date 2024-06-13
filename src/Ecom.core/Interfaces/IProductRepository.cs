@@ -9,5 +9,6 @@ namespace Ecom.core.Interfaces
 {
     public  interface IProductRepository : IGenericRepository<Product> 
     {
+        Task <bool> AddAsync();
     }
 }
